@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Modern clothing brand website.">
+  <title>THREAD & CO. | Modern Everyday Wear</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <a href="#" class="logo">THREAD & CO.</a>
+    <nav>
+      <a href="#shop">Shop</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#shop" class="nav-button">Shop Now</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">NEW COLLECTION 2026</p>
+        <h1>Style that feels like <em>you.</em></h1>
+        <p class="hero-copy">Clean, comfortable and versatile pieces designed for everyday life.</p>
+        <a href="#shop" class="button">Explore Collection</a>
+      </div>
+      <div class="hero-image">
+        <div class="fashion-card">
+          <span>NEW<br>ARRIVALS</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="shop" class="section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">SHOP</p>
+          <h2>Featured pieces</h2>
+        </div>
+        <p>Simple pieces. Easy to wear. Made to stand out.</p>
+      </div>
+
+      <div class="products">
+        <article class="product">
+          <div class="product-image image-one"><span>01</span></div>
+          <h3>Essential Oversized Tee</h3>
+          <p>Premium cotton · Black</p>
+          <strong>₱899</strong>
+          <button onclick="addToCart('Essential Oversized Tee')">Add to cart</button>
+        </article>
+
+        <article class="product">
+          <div class="product-image image-two"><span>02</span></div>
+          <h3>Everyday Linen Shirt</h3>
+          <p>Relaxed fit · Cream</p>
+          <strong>₱1,499</strong>
+          <button onclick="addToCart('Everyday Linen Shirt')">Add to cart</button>
+        </article>
+
+        <article class="product">
+          <div class="product-image image-three"><span>03</span></div>
+          <h3>Classic Wide-Leg Pants</h3>
+          <p>Comfort fit · Charcoal</p>
+          <strong>₱1,699</strong>
+          <button onclick="addToCart('Classic Wide-Leg Pants')">Add to cart</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div>
+        <p class="eyebrow">OUR STORY</p>
+        <h2>Designed for real life.</h2>
+      </div>
+      <p>THREAD & CO. is a sample clothing brand focused on timeless essentials, comfortable fits and everyday confidence. Replace this text with your own brand story, mission and values.</p>
+    </section>
+
+    <section class="newsletter">
+      <p class="eyebrow">STAY IN THE LOOP</p>
+      <h2>Get first access to new drops.</h2>
+      <form onsubmit="subscribe(event)">
+        <input type="email" id="email" placeholder="Your email address" required>
+        <button type="submit" class="button">Subscribe</button>
+      </form>
+      <p id="message"></p>
+    </section>
+
+    <section id="contact" class="contact">
+      <div>
+        <p class="eyebrow">CONTACT</p>
+        <h2>Let's talk.</h2>
+      </div>
+      <div class="contact-details">
+        <p>Email: hello@threadandco.com</p>
+        <p>Instagram: @threadandco</p>
+        <p>Location: Philippines</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 THREAD & CO. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
